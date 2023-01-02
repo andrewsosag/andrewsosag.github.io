@@ -36,7 +36,9 @@ jobs:
           destination: ./_site
       - name: List directory contents
         run: ls -laR .
+      - name: root index.html contents
         run: cat index.html
+      - name: _site index.html contents
         run: cat _site/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
