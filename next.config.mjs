@@ -6,6 +6,8 @@ const nextConfig = {
   },
   basePath: '',
   assetPrefix: '',
+  // Make sure static assets are copied
+  distDir: 'out',
 };
 
 export default nextConfig;
