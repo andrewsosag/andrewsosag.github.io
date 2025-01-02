@@ -22,15 +22,15 @@ export const projects = [
     description: "Launched BerkeleyNest.com, a comprehensive platform for analyzing Berkeley's apartment market. Utilized Python for automated data scraping and preprocessing, and NoSQL for data management. Created interactive analytics tools using JavaScript to provide insights into rental market trends. Developed a random forest model with TensorFlow to accurately predict fair rental prices.",
     image: "/images/projects/berkeleynest.png",
     link: "https://berkeleynest.com",
-    github: "https://github.com/andrewsosag/berkeleynest",
-    technologies: ["Python", "NoSQL", "Web Scraping", "Google Cloud"]
+    github: "https://github.com/andrewsosag/berkeleyRentalTracker",
+    technologies: ["Python", "SQL", "Web Scraping", "Google Cloud"]
   },
   {
     title: "TicketSaver",
     description: "Developed TicketSaver.org to monitor and analyze concert ticket prices for 5000+ concerts using Python and the Ticketmaster API, enabling consumers to identify ticket purchasing opportunities. Designed a NoSQL database, automating data extraction and preprocessing with Python. Created an interactive dashboard with JavaScript for real-time visualizations of ticket pricing trends.",
     image: "/images/projects/ticketsaver.png",
     link: "https://ticketsaver.org",
-    github: "https://github.com/andrewsosag/ticketsaver",
-    technologies: ["Python", "NoSQL", "API", "Google Cloud"]
+    github: "https://github.com/andrewsosag/concert_tracker",
+    technologies: ["Python", "SQL", "API", "Google Cloud"]
   }
 ];
