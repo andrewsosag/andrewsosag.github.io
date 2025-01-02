@@ -28,7 +28,7 @@ export default function Home() {
                 Applied Mathematics @ UC Berkeley
               </h2>
               <p className="mt-4 max-w-xs leading-normal">
-                Experience building data-driven applications at Driscoll's and Motorola Solutions.
+              Building data-driven solutions through ML engineering and statistical analysis at Motorola Solutions and Driscoll's.
               </p>
               
               {/* Navigation */}
@@ -82,17 +82,10 @@ export default function Home() {
               </h2>
               <div className="space-y-4">
                 <p>
-                  I'm an Applied Mathematics student at UC Berkeley, focusing on statistics
-                  and machine learning.
+                Applied Mathematics student at UC Berkeley specializing in machine learning and statistical modeling. Passionate about leveraging AI and data science to solve complex industry problems and create impactful solutions.
                 </p>
                 <p>
-                  From optimizing food supply chains at Driscoll's to helping students
-                  find affordable housing with BerkeleyNest, I'm passionate about using
-                  technology to solve meaningful problems.
-                </p>
-                <p>
-                  When I'm not coding or analyzing data, I'm probably working on personal
-                  projects or exploring new technologies in machine learning and data science.
+                Currently focused on developing ML models and analytics pipelines at Motorola Solutions, while previously using data analytics to optimize supply chain operations at Driscoll's.
                 </p>
               </div>
             </section>
