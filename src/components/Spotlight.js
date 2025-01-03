@@ -8,10 +8,9 @@ export default function Spotlight() {
   useEffect(() => {
     setIsClient(true);
     const handleMouseMove = (e) => {
-      const rect = document.documentElement.getBoundingClientRect();
       setMousePosition({
         x: e.clientX,
-        y: e.clientY - rect.top,
+        y: e.clientY
       });
     };
 
