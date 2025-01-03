@@ -8,9 +8,10 @@ export default function Spotlight() {
   useEffect(() => {
     setIsClient(true);
     const handleMouseMove = (e) => {
+      const rect = document.documentElement.getBoundingClientRect();
       setMousePosition({
         x: e.clientX,
-        y: e.clientY,
+        y: e.clientY - rect.top,
       });
     };
 
@@ -22,7 +23,7 @@ export default function Spotlight() {
 
   return (
     <div 
-      className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+      className="pointer-events-none fixed inset-0 z-30 transition duration-300"
       style={{
         background: `
           radial-gradient(
