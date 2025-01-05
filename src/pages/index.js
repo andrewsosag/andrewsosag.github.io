@@ -13,6 +13,21 @@ const inter = Inter({
 });
 
 export default function Home() {
+  const researchPapers = [
+    {
+      title: "The Societal Impact of AI on Employment",
+      year: "2022",
+      summary: "Explored short and long-term effects of AI on employment, focusing on economic inequality and epigenetic implications.",
+      pdfPath: "/docs/research/ai-employment-impact-2022.pdf"
+    },
+    {
+      title: "AI and the Economy",
+      year: "2021",
+      summary: "Analyzed global economic disparities driven by AI adoption, automation, and creative destruction.",
+      pdfPath: "/docs/research/ai-economy-2021.pdf"
+    }
+  ];
+
   return (
     <div className={`${inter.className} min-h-screen bg-slate-900 text-slate-400 relative`}>
       <Spotlight />
@@ -28,13 +43,13 @@ export default function Home() {
                 Applied Mathematics @ UC Berkeley
               </h2>
               <p className="mt-4 max-w-xs leading-normal">
-              Building data-driven solutions through ML engineering and statistical analysis at Motorola Solutions and Driscoll's.
+                Building data-driven solutions through ML engineering and statistical analysis at Motorola Solutions and Driscoll's.
               </p>
               
-              {/* Navigation */}
+              {/* Navigation - Updated to include Research */}
               <nav className="hidden lg:block mt-16">
                 <ul className="space-y-5">
-                  {['About', 'Experience', 'Projects'].map((item) => (
+                  {['About', 'Experience', 'Projects', 'Research'].map((item) => (
                     <li key={item}>
                       <a 
                         href={`#${item.toLowerCase()}`}
@@ -82,10 +97,10 @@ export default function Home() {
               </h2>
               <div className="space-y-4">
                 <p>
-                Applied Mathematics student at UC Berkeley specializing in machine learning and statistical modeling. Passionate about leveraging AI and data science to solve complex industry problems and create impactful solutions.
+                  Applied Mathematics student at UC Berkeley specializing in machine learning and statistical modeling. Passionate about leveraging AI and data science to solve complex industry problems and create impactful solutions.
                 </p>
                 <p>
-                Currently focused on developing ML models and analytics pipelines at Motorola Solutions, while previously using data analytics to optimize supply chain operations at Driscoll's.
+                  Currently focused on developing ML models and analytics pipelines at Motorola Solutions, while previously using data analytics to optimize supply chain operations at Driscoll's.
                 </p>
               </div>
             </section>
@@ -102,12 +117,12 @@ export default function Home() {
               </div>
               <div className="mt-12">
                 <a
-                    className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
-                    href={`${assetPrefix}/docs/resume.pdf`}  // Updated this line
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="View Full Résumé (opens in a new tab)"
-                  >
+                  className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+                  href={`${assetPrefix}/docs/resume.pdf`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="View Full Résumé (opens in a new tab)"
+                >
                   <span>
                     View Full{' '}
                     <span className="inline-block">
@@ -128,6 +143,7 @@ export default function Home() {
                 </a>
               </div>
             </section>
+
             {/* Projects Section */}
             <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36">
               <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 mb-8">
@@ -136,6 +152,54 @@ export default function Home() {
               <div className="space-y-12">
                 {projects.map((project, index) => (
                   <ProjectCard key={index} {...project} />
+                ))}
+              </div>
+            </section>
+
+            {/* Research Section */}
+            <section id="research" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 mb-8">
+                Research
+              </h2>
+              <div className="space-y-12">
+                {researchPapers.map((paper, index) => (
+                  <article key={index} className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
+                    <div className="z-10 sm:col-span-8">
+                      <h3 className="font-medium leading-snug text-slate-200">
+                        <a
+                          className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                          href={`${assetPrefix}${paper.pdfPath}`}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          aria-label={`${paper.title} (opens in a new tab)`}
+                        >
+                          <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span>
+                            {paper.title}{' '}
+                            <span className="inline-block">
+                              ({paper.year})
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                />
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </h3>
+                      <p className="mt-2 text-sm leading-normal">
+                        {paper.summary}
+                      </p>
+                    </div>
+                  </article>
                 ))}
               </div>
             </section>
