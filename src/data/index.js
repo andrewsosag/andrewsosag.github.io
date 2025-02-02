@@ -8,11 +8,11 @@ export const experiences = [
     technologies: ["Python", "SQL", "Machine Learning", "Data Science"]
   },
   {
-    title: "Demand Management Intern",
+    title: "Data Analyst Intern",
     company: "Driscoll's",
     date: "May - Aug 2023",
     description: "Engineered data validation processes and automation systems improving forecast accuracy by 90%. Developed real-time analytics dashboards integrating multi-source data for supply chain optimization.",
-    technologies: ["Excel", "Tableau", "Data Analysis", "Automation"]
+    technologies: ["Python", "Excel", "Tableau", "Data Analysis"]
   }
 ];
 
