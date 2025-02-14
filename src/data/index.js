@@ -4,7 +4,7 @@ export const experiences = [
     title: "Data Science Intern",
     company: "Motorola Solutions",
     date: "May 2024 - Present",
-    description: "Leading development of ML algorithms for large-scale radio configuration analysis, processing 10,000+ datasets. Engineered automated data pipelines and conducted cross-functional research to optimize product design through statistical modeling and user experience analysis.",
+    description: "Leading development of ML algorithms for large-scale radio configuration analysis, processing 10,000+ radio configurations. Engineered automated data pipelines and conducted cross-functional product design research through statistical modeling and user experience analysis.",
     technologies: ["Python", "SQL", "Machine Learning", "Data Science"]
   },
   {
@@ -19,7 +19,7 @@ export const experiences = [
 export const projects = [
   {
     title: "BerkeleyNest",
-    description: "Full-stack ML platform analyzing Berkeley's rental market using cloud infrastructure. Engineered automated data pipeline processing 5000+ listings with real-time visualization. Implemented TensorFlow models achieving 85% accuracy in price predictions.",
+    description: "Full-stack ML platform analyzing Berkeley's rental market using cloud infrastructure. Engineered automated data pipeline processing 5000+ listings with real-time visualization. Implemented TensorFlow models achieving 92% accuracy in price predictions.",
     image: "/images/projects/berkeleynest.png",
     link: "https://berkeleynest.com",
     github: "https://github.com/andrewsosag/berkeleyRentalTracker",
